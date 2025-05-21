@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reverse Wordle</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🌀 Reverse Wordle</h1>
+  <div id="game-board">
+    <div id="slots">
+      <div class="slot" data-index="0"></div>
+      <div class="slot" data-index="1"></div>
+      <div class="slot" data-index="2"></div>
+      <div class="slot" data-index="3"></div>
+      <div class="slot" data-index="4"></div>
+    </div>
+    <div id="current-letter">?</div>
+    <div id="buttons">
+      <button onclick="placeLetter(0)">Slot 1</button>
+      <button onclick="placeLetter(1)">Slot 2</button>
+      <button onclick="placeLetter(2)">Slot 3</button>
+      <button onclick="placeLetter(3)">Slot 4</button>
+      <button onclick="placeLetter(4)">Slot 5</button>
+    </div>
+    <button onclick="submitWord()">Submit Word</button>
+    <p id="message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
