@@ -1,43 +1,118 @@
-body {
-  font-family: sans-serif;
-  text-align: center;
-  background-color: #111;
-  color: #fff;
-  padding: 20px;
-}
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0e0e0e;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
 
-#slots {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
-}
+  .container {
+    max-width: 600px;
+    margin: auto;
+    padding: 40px 20px;
+  }
 
-.slot {
-  width: 50px;
-  height: 50px;
-  margin: 5px;
-  font-size: 2em;
-  background: #333;
-  border: 2px solid #555;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  h1 {
+    font-size: 2.5em;
+    color: #00ffd5;
+  }
 
-#current-letter {
-  font-size: 2em;
-  margin: 20px 0;
-}
+  h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
 
-button {
-  margin: 5px;
-  padding: 10px;
-  background: #444;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
+  #game-board {
+    margin-top: 30px;
+  }
 
-button:hover {
-  background: #666;
-}
+  .slots {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .slot {
+    width: 60px;
+    height: 60px;
+    margin: 0 5px;
+    font-size: 2em;
+    background-color: #222;
+    border: 2px solid #555;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #letter-area {
+    margin: 20px 0;
+  }
+
+  #current-letter {
+    font-size: 2.5em;
+    color: #ffcc00;
+  }
+
+  .button-container {
+    margin: 10px 0 20px;
+  }
+
+  .button-container button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 1em;
+    background-color: #333;
+    color: white;
+    border: 1px solid #666;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .button-container button:hover {
+    background-color: #555;
+  }
+
+  .action-buttons button {
+    margin: 10px 8px;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  #submit-button {
+    background-color: #00ffd5;
+    color: black;
+    border: none;
+  }
+
+  #submit-button:hover {
+    background-color: #00d4b8;
+  }
+
+  #try-again-button {
+    background-color: #444;
+    color: white;
+    border: 1px solid #888;
+  }
+
+  #try-again-button:hover {
+    background-color: #666;
+  }
+
+  #message {
+    margin-top: 20px;
+    font-weight: bold;
+    min-height: 24px;
+  }
+
+  #congrats-screen {
+    display: none;
+    background-color: #111;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 10px;
+    border: 2px solid #00ffd5;
+  }

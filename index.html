@@ -3,29 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reverse Wordle</title>
+  <title>Wordle Reverse</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>🌀 Reverse Wordle</h1>
-  <div id="game-board">
-    <div id="slots">
-      <div class="slot" data-index="0"></div>
-      <div class="slot" data-index="1"></div>
-      <div class="slot" data-index="2"></div>
-      <div class="slot" data-index="3"></div>
-      <div class="slot" data-index="4"></div>
+  <div class="container">
+    <h1>Wordle Reverse</h1>
+    <h2 id="level-title">Level 1: Make a 2-letter Word</h2>
+
+    <div id="game-board">
+      <div id="slots" class="slots"></div>
+
+      <div id="letter-area">
+        <p>Current Letter:</p>
+        <div id="current-letter">?</div>
+      </div>
+
+      <div id="buttons" class="button-container"></div>
+
+      <div class="action-buttons">
+        <button id="submit-button" onclick="submitWord()">✅ Submit Word</button>
+        <button id="try-again-button" onclick="resetLevel()" style="display: none;">🔄 Try Again</button>
+      </div>
+
+      <p id="message"></p>
     </div>
-    <div id="current-letter">?</div>
-    <div id="buttons">
-      <button onclick="placeLetter(0)">Slot 1</button>
-      <button onclick="placeLetter(1)">Slot 2</button>
-      <button onclick="placeLetter(2)">Slot 3</button>
-      <button onclick="placeLetter(3)">Slot 4</button>
-      <button onclick="placeLetter(4)">Slot 5</button>
+
+    <div id="congrats-screen">
+      <h2>🎉 Congratulations!</h2>
+      <p>You conquered all 5 levels of Wordle Reverse!</p>
+      <button onclick="restartGame()">🔁 Play Again</button>
     </div>
-    <button onclick="submitWord()">Submit Word</button>
-    <p id="message"></p>
   </div>
 
   <script src="script.js"></script>
